@@ -7,6 +7,7 @@ project = bb_hr_job_search
 dependencies[] = entity
 dependencies[] = facetapi
 dependencies[] = search_api
+dependencies[] = search_api_views
 dependencies[] = search_api_db
 dependencies[] = semanticviews
 dependencies[] = views
