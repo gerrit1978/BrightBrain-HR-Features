@@ -10,47 +10,122 @@
 function bb_hr_job_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-job-body'
-  $field_instances['node-job-body'] = array(
+  // Exported field_instance: 'node-job-field_job_apply_email'
+  $field_instances['node-job-field_job_apply_email'] = array(
     'bundle' => 'job',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
+        'label' => 'above',
+        'module' => 'email',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'email_default',
+        'weight' => 14,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'field_name' => 'field_job_apply_email',
+    'label' => 'Sollicitatie E-mail',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-job-field_job_call_to_action'
+  $field_instances['node-job-field_job_call_to_action'] = array(
+    'bundle' => 'job',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_job_call_to_action',
+    'label' => 'Call To Action',
+    'required' => 0,
+    'settings' => array(
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
+        'rows' => 5,
       ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'type' => 'text_textarea',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-job-field_job_company_description'
+  $field_instances['node-job-field_job_company_description'] = array(
+    'bundle' => 'job',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_job_company_description',
+    'label' => 'Bedrijfsomschrijving',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 6,
     ),
   );
 
@@ -87,7 +162,47 @@ function bb_hr_job_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 34,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-job-field_job_description'
+  $field_instances['node-job-field_job_description'] = array(
+    'bundle' => 'job',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_job_description',
+    'label' => 'Omschrijving',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
     ),
   );
 
@@ -124,7 +239,7 @@ function bb_hr_job_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 35,
+      'weight' => 7,
     ),
   );
 
@@ -161,7 +276,7 @@ function bb_hr_job_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 36,
+      'weight' => 8,
     ),
   );
 
@@ -198,7 +313,7 @@ function bb_hr_job_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 4,
     ),
   );
 
@@ -235,7 +350,7 @@ function bb_hr_job_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 33,
+      'weight' => 5,
     ),
   );
 
@@ -262,7 +377,7 @@ function bb_hr_job_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_job_languages',
-    'label' => 'Languages',
+    'label' => 'Talen',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -278,7 +393,87 @@ function bb_hr_job_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'autocomplete_deluxe_taxonomy',
-      'weight' => 37,
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-job-field_job_offer'
+  $field_instances['node-job-field_job_offer'] = array(
+    'bundle' => 'job',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_job_offer',
+    'label' => 'Aanbod',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-job-field_job_profile'
+  $field_instances['node-job-field_job_profile'] = array(
+    'bundle' => 'job',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_job_profile',
+    'label' => 'Profiel',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 7,
     ),
   );
 
@@ -321,7 +516,7 @@ function bb_hr_job_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'autocomplete_deluxe_taxonomy',
-      'weight' => 39,
+      'weight' => 10,
     ),
   );
 
@@ -364,19 +559,24 @@ function bb_hr_job_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'autocomplete_deluxe_taxonomy',
-      'weight' => 38,
+      'weight' => 11,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
+  t('Aanbod');
+  t('Bedrijfsomschrijving');
+  t('Call To Action');
   t('Diploma');
   t('Ervaring');
-  t('Languages');
+  t('Omschrijving');
+  t('Profiel');
   t('Skills Algemeen');
   t('Skills IT');
+  t('Sollicitatie E-mail');
   t('Studiedomein');
+  t('Talen');
   t('Type contract');
   t('Werkdomein');
 
