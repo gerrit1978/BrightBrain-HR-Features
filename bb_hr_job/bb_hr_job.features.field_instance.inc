@@ -189,7 +189,7 @@ function bb_hr_job_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_job_description',
-    'label' => 'Omschrijving',
+    'label' => 'Jobomschrijving',
     'required' => 0,
     'settings' => array(
       'text_processing' => 1,
