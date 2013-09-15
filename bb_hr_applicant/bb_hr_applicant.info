@@ -1,0 +1,9 @@
+name = BB HR Applicant
+description = Applicant related functionalities
+core = 7.x
+package = BrightBrain
+version = 7.x-1.0-alfa1
+project = bb_hr_applicant
+features[features_api][] = api:2
+features[user_role][] = applicant
+features_exclude[dependencies][features] = features
