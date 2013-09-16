@@ -17,7 +17,7 @@ function bb_hr_job_search_facetapi_default_facet_settings() {
   $facet->searcher = 'search_api@job_index';
   $facet->realm = 'block';
   $facet->facet = 'changed';
-  $facet->enabled = FALSE;
+  $facet->enabled = TRUE;
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -799,7 +799,7 @@ function bb_hr_job_search_facetapi_default_facet_settings() {
   $facet->searcher = 'search_api@job_index';
   $facet->realm = 'block';
   $facet->facet = 'search_api_language';
-  $facet->enabled = FALSE;
+  $facet->enabled = TRUE;
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -867,7 +867,7 @@ function bb_hr_job_search_facetapi_default_facet_settings() {
   $facet->searcher = 'search_api@job_index';
   $facet->realm = 'block';
   $facet->facet = 'title';
-  $facet->enabled = FALSE;
+  $facet->enabled = TRUE;
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
