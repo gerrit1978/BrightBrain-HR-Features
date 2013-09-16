@@ -5,3 +5,15 @@
  */
 
 include_once 'bb_hr_job_search.features.inc';
+
+/**
+ * Implements hook_views_post_execute
+ */
+function bb_hr_job_search_views_post_execute(&$view) {
+  if ($view->name == 'jobs_front') {
+    $path = 'jobs';
+    $alias = drupal_lookup_path('alias', $path);
+    $base_path = !empty($alias) ? $alias : $path;
+    $view->query->setOption('search_api_base_path', $base_path);   
+  }
+}
