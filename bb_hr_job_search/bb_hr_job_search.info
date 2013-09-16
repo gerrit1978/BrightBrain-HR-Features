@@ -6,7 +6,6 @@ version = 7.x-1.0-beta5
 project = bb_hr_job_search
 dependencies[] = entity
 dependencies[] = facetapi
-dependencies[] = fe_block
 dependencies[] = search_api
 dependencies[] = search_api_db
 dependencies[] = search_api_facetapi
