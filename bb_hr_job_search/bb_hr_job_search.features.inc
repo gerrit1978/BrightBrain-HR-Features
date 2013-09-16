@@ -40,39 +40,8 @@ function bb_hr_job_search_default_search_api_index() {
         "url" : { "type" : "uri" },
         "created" : { "type" : "date" },
         "changed" : { "type" : "date" },
-        "field_job_apply_email" : { "type" : "text" },
         "search_api_language" : { "type" : "string" },
-        "search_api_url" : { "type" : "uri" },
-        "field_job_call_to_action:value" : { "type" : "text" },
-        "field_job_company_description:value" : { "type" : "text" },
-        "field_job_degree_level:parents_all" : {
-          "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-          "entity_type" : "taxonomy_term"
-        },
-        "field_job_description:value" : { "type" : "text" },
-        "field_job_employment_type:parents_all" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_job_experience:parents_all" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_job_field_of_study:parents_all" : {
-          "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-          "entity_type" : "taxonomy_term"
-        },
-        "field_job_field_of_work:parents_all" : {
-          "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-          "entity_type" : "taxonomy_term"
-        },
-        "field_job_languages:parents_all" : {
-          "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-          "entity_type" : "taxonomy_term"
-        },
-        "field_job_offer:value" : { "type" : "text" },
-        "field_job_skills_general:parents_all" : {
-          "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-          "entity_type" : "taxonomy_term"
-        },
-        "field_job_skills_it:parents_all" : {
-          "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-          "entity_type" : "taxonomy_term"
-        }
+        "search_api_url" : { "type" : "uri" }
       },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {
@@ -185,79 +154,14 @@ function bb_hr_job_search_default_search_api_server() {
             "type" : "date",
             "boost" : "1.0"
           },
-          "field_job_apply_email" : {
-            "table" : "search_api_db_job_index_field_job_apply_email",
-            "type" : "text",
-            "boost" : "1.0"
-          },
           "search_api_language" : {
             "table" : "search_api_db_job_index_search_api_language",
             "type" : "string",
             "boost" : "1.0"
           },
-          "field_job_company_description:value" : {
-            "table" : "search_api_db_job_index_field_job_company_description_value",
-            "type" : "text",
-            "boost" : "1.0"
-          },
-          "field_job_description:value" : {
-            "table" : "search_api_db_job_index_field_job_description_value",
-            "type" : "text",
-            "boost" : "1.0"
-          },
-          "field_job_offer:value" : {
-            "table" : "search_api_db_job_index_field_job_offer_value",
-            "type" : "text",
-            "boost" : "1.0"
-          },
-          "field_job_call_to_action:value" : {
-            "table" : "search_api_db_job_index_field_job_call_to_action_value",
-            "type" : "text",
-            "boost" : "1.0"
-          },
           "search_api_url" : {
             "table" : "search_api_db_job_index_search_api_url",
             "type" : "uri",
-            "boost" : "1.0"
-          },
-          "field_job_languages:parents_all" : {
-            "table" : "search_api_db_job_index_field_job_languages_parents_all",
-            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-            "boost" : "1.0"
-          },
-          "field_job_field_of_study:parents_all" : {
-            "table" : "search_api_db_job_index_field_job_field_of_study_parents_all",
-            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-            "boost" : "1.0"
-          },
-          "field_job_field_of_work:parents_all" : {
-            "table" : "search_api_db_job_index_field_job_field_of_work_parents_all",
-            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-            "boost" : "1.0"
-          },
-          "field_job_degree_level:parents_all" : {
-            "table" : "search_api_db_job_index_field_job_degree_level_parents_all",
-            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-            "boost" : "1.0"
-          },
-          "field_job_employment_type:parents_all" : {
-            "table" : "search_api_db_job_index_field_job_employment_type_parents_all",
-            "type" : "list\\u003Cinteger\\u003E",
-            "boost" : "1.0"
-          },
-          "field_job_experience:parents_all" : {
-            "table" : "search_api_db_job_index_field_job_experience_parents_all",
-            "type" : "list\\u003Cinteger\\u003E",
-            "boost" : "1.0"
-          },
-          "field_job_skills_it:parents_all" : {
-            "table" : "search_api_db_job_index_field_job_skills_it_parents_all",
-            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
-            "boost" : "1.0"
-          },
-          "field_job_skills_general:parents_all" : {
-            "table" : "search_api_db_job_index_field_job_skills_general_parents_all",
-            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
             "boost" : "1.0"
           }
         }
