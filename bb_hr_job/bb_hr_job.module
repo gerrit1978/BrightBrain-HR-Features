@@ -5,3 +5,80 @@
  */
 
 include_once 'bb_hr_job.features.inc';
+
+/******************************************************
+ * Drupal Hooks
+ *****************************************************/
+
+/**
+ * Implements hook_block_info
+ */
+function bb_hr_job_block_info() {
+  $blocks = array();
+  
+  $blocks['bb_hr_job_linkedin'] = array(
+    'info' => t('Apply with LinkedIn'),
+  );
+  
+  return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view
+ */
+function bb_hr_job_block_view($delta) {
+
+  $block = array();
+
+  switch ($delta) {
+    case 'bb_hr_job_linkedin':
+      $block['subject'] = t('Apply with LinkedIn');
+      $block['content'] = _bb_hr_job_block_bb_hr_job_linkedin_render();
+      break;
+  }
+  
+  return $block;
+}
+
+/**
+ * Implements hook_theme
+ */
+function bb_hr_job_theme($existing, $type, $theme, $path) {
+  return array(
+    'bb_hr_job_apply_linkedin' => array(
+      'variables' => array('jobtitle' => NULL),
+      'template' => 'bb_hr_job_apply_linkedin',
+    ),
+  );
+}
+
+
+/*******************************************************
+ * Helper, callback and rendering functions
+ ******************************************************/
+
+/**
+ * Get a list of valid "Job" content types
+ */
+function _bb_hr_job_content_types() {
+  return array_keys(bb_hr_job_node_info());
+}
+
+/** 
+ * Render LinkedIn block
+ */
+function _bb_hr_job_block_bb_hr_job_linkedin_render() {
+  $jobtitle = t("Spontaan solliciteren");
+
+  if (arg(0) == 'node' && is_numeric(arg(1))) {
+    $nid = arg(1);
+    $node = node_load($nid);
+    if (in_array($node->type, _bb_hr_job_content_types())) {
+      $jobtitle = $node->title;
+    } 
+  }  
+  $output = theme('bb_hr_job_apply_linkedin', array('jobtitle' => $jobtitle));
+  return $output;
+
+}
