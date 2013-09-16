@@ -26,6 +26,12 @@ function bb_hr_job_search_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views--exp-jobs-page' => array(
+          'module' => 'views',
+          'delta' => '-exp-jobs-page',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'facetapi-5WeLUXLQYB6myGK1nXd721FxmefhJJtp' => array(
           'module' => 'facetapi',
           'delta' => '5WeLUXLQYB6myGK1nXd721FxmefhJJtp',
@@ -84,6 +90,51 @@ function bb_hr_job_search_context_default_contexts() {
   t('BrightBrain');
   t('Job search pages');
   $export['job_search'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'job_search_front';
+  $context->description = 'Frontpage blocks (job search)';
+  $context->tag = 'BrightBrain';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '<front>' => '<front>',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-jobs_front-block' => array(
+          'module' => 'views',
+          'delta' => 'jobs_front-block',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'facetapi-qO2aQ1pOhH01tykI7iO0fVyYYhsLtVTK' => array(
+          'module' => 'facetapi',
+          'delta' => 'qO2aQ1pOhH01tykI7iO0fVyYYhsLtVTK',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'facetapi-v8OT33llPN3ejhlfbqjoLxQDpoQrpr2g' => array(
+          'module' => 'facetapi',
+          'delta' => 'v8OT33llPN3ejhlfbqjoLxQDpoQrpr2g',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('BrightBrain');
+  t('Frontpage blocks (job search)');
+  $export['job_search_front'] = $context;
 
   return $export;
 }

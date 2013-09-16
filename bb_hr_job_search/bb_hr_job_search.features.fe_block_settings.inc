@@ -47,7 +47,7 @@ function bb_hr_job_search_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Ervaring',
+    'title' => '',
     'visibility' => 0,
   );
 
@@ -86,7 +86,7 @@ function bb_hr_job_search_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Skills Algemeen',
+    'title' => '',
     'visibility' => 0,
   );
 
@@ -125,7 +125,7 @@ function bb_hr_job_search_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Studiedomein',
+    'title' => '',
     'visibility' => 0,
   );
 
@@ -164,7 +164,7 @@ function bb_hr_job_search_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Skills IT',
+    'title' => '',
     'visibility' => 0,
   );
 
@@ -203,7 +203,7 @@ function bb_hr_job_search_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Talen',
+    'title' => '',
     'visibility' => 0,
   );
 
@@ -242,7 +242,7 @@ function bb_hr_job_search_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Diploma',
+    'title' => '',
     'visibility' => 0,
   );
 
@@ -281,7 +281,7 @@ function bb_hr_job_search_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Werkdomein',
+    'title' => '',
     'visibility' => 0,
   );
 
@@ -320,7 +320,7 @@ function bb_hr_job_search_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Contract',
+    'title' => '',
     'visibility' => 0,
   );
 
