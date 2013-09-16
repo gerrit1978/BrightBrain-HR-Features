@@ -570,7 +570,7 @@ function bb_hr_job_field_default_field_instances() {
   t('Call To Action');
   t('Diploma');
   t('Ervaring');
-  t('Omschrijving');
+  t('Jobomschrijving');
   t('Profiel');
   t('Skills Algemeen');
   t('Skills IT');
