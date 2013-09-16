@@ -4,6 +4,7 @@ core = 7.x
 package = BrightBrain
 version = 7.x-1.0-beta10
 project = bb_hr_job_search
+dependencies[] = context
 dependencies[] = entity
 dependencies[] = facetapi
 dependencies[] = facetapi_pretty_paths
