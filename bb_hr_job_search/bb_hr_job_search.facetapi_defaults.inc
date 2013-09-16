@@ -13,6 +13,33 @@ function bb_hr_job_search_facetapi_default_facet_settings() {
   $facet = new stdClass();
   $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
   $facet->api_version = 1;
+  $facet->name = 'search_api@job_index::field_job_degree_level:parents_all';
+  $facet->searcher = 'search_api@job_index';
+  $facet->realm = '';
+  $facet->facet = 'field_job_degree_level:parents_all';
+  $facet->enabled = FALSE;
+  $facet->settings = array(
+    'operator' => 'and',
+    'hard_limit' => '50',
+    'dependencies' => array(
+      'bundle' => 'none',
+      'bundle_selected' => array(),
+    ),
+    'facet_mincount' => '1',
+    'facet_missing' => '0',
+    'flatten' => '0',
+    'query_type' => 'term',
+    'default_true' => TRUE,
+    'facet_search_ids' => array(),
+    'pretty_paths_alias' => 'diploma',
+    'pretty_paths_taxonomy_pathauto' => 0,
+    'pretty_paths_taxonomy_pathauto_vocabulary' => 'degree_level',
+  );
+  $export['search_api@job_index::field_job_degree_level:parents_all'] = $facet;
+
+  $facet = new stdClass();
+  $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
+  $facet->api_version = 1;
   $facet->name = 'search_api@job_index:block:changed';
   $facet->searcher = 'search_api@job_index';
   $facet->realm = 'block';
