@@ -27,5 +27,6 @@ features[search_api_index][] = job_index
 features[search_api_server][] = db_server
 features[variable][] = facetapi_pretty_paths_searcher_search_api@job_index
 features[variable][] = facetapi_pretty_paths_searcher_search_api@job_index_options
+features[views_view][] = jobs
 features[views_view][] = jobs_front
 features_exclude[dependencies][ctools] = ctools
