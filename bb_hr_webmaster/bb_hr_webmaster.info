@@ -1,0 +1,9 @@
+name = BB HR Webmaster
+description = General webmaster functionalities and permissions (e.g. entering content...)
+core = 7.x
+package = BrightBrain
+version = 7.x-1.0-beta1
+project = bb_hr_webmaster
+dependencies[] = features
+features[features_api][] = api:2
+features[user_role][] = webmaster
