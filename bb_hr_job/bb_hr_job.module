@@ -41,13 +41,73 @@ function bb_hr_job_block_view($delta) {
   return $block;
 }
 
+
+/**
+ * Implements hook_block_configure
+ */
+function bb_hr_job_block_configure($delta = '') {
+
+  $form = array();
+  
+  switch ($delta) {
+    case 'bb_hr_job_linkedin':
+      $form['bb_hr_job_linkedin'] = array(
+        '#type' => 'fieldset',
+        '#title' => 'LinkedIn settings',
+      );
+      
+      $form['bb_hr_job_linkedin']['bb_hr_job_linkedin_api_key'] = array(
+        '#type' => 'textfield',
+        '#title' => t('De LinkedIn API key'),
+        '#default_value' => variable_get('bb_hr_job_linkedin_api_key', ''),
+      );
+      
+      $form['bb_hr_job_linkedin']['bb_hr_job_linkedin_company_name'] = array(
+        '#type' => 'textfield',
+        '#title' => t('De bedrijfsnaam'),
+        '#default_value' => variable_get('bb_hr_job_linkedin_company_name', ''),
+      );
+
+      $form['bb_hr_job_linkedin']['bb_hr_job_linkedin_company_email'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Het e-mailadres'),
+        '#default_value' => variable_get('bb_hr_job_linkedin_company_email', ''),
+      );
+      
+      break;  
+  }
+  
+  return $form;
+}
+
+
+/**
+ * Implements hook_block_save
+ * TODO: add other variables here
+ *
+ */
+function bb_hr_job_block_save($delta = '', $edit = array()) {
+  switch ($delta) {
+    case 'bb_hr_job_linkedin':
+      variable_set('bb_hr_job_linkedin_api_key', $edit['bb_hr_job_linkedin_api_key']);
+      variable_set('bb_hr_job_linkedin_company_name', $edit['bb_hr_job_linkedin_company_name']);
+      variable_set('bb_hr_job_linkedin_company_email', $edit['bb_hr_job_linkedin_company_email']);            
+  }
+}
+
+
 /**
  * Implements hook_theme
  */
 function bb_hr_job_theme($existing, $type, $theme, $path) {
   return array(
     'bb_hr_job_apply_linkedin' => array(
-      'variables' => array('jobtitle' => NULL),
+      'variables' => array(
+        'jobtitle' => NULL,
+        'api_key' => NULL,
+        'company_name' => NULL,
+        'company_email' => NULL,
+      ),
       'template' => 'bb_hr_job_apply_linkedin',
     ),
   );
@@ -69,16 +129,27 @@ function _bb_hr_job_content_types() {
  * Render LinkedIn block
  */
 function _bb_hr_job_block_bb_hr_job_linkedin_render() {
-  $jobtitle = t("Spontaan solliciteren");
 
+  // template variables
+  $jobtitle = t("Spontaan solliciteren");
   if (arg(0) == 'node' && is_numeric(arg(1))) {
     $nid = arg(1);
     $node = node_load($nid);
     if (in_array($node->type, _bb_hr_job_content_types())) {
       $jobtitle = $node->title;
     } 
-  }  
-  $output = theme('bb_hr_job_apply_linkedin', array('jobtitle' => $jobtitle));
+  }
+  
+  $api_key = variable_get('bb_hr_job_linkedin_api_key', '');
+  $company_name = variable_get('bb_hr_job_linkedin_company_name', '');
+  $company_email = variable_get('bb_hr_job_linkedin_company_email', '');
+  
+  $output = theme('bb_hr_job_apply_linkedin', array(
+    'jobtitle' => $jobtitle,
+    'api_key' => $api_key,
+    'company_name' => $company_name,
+    'company_email' => $company_email,
+  ));
   return $output;
 
 }
