@@ -17,6 +17,7 @@ dependencies[] = list
 dependencies[] = number
 dependencies[] = options
 dependencies[] = profile2
+dependencies[] = profile2_page
 dependencies[] = taxonomy
 dependencies[] = term_level
 dependencies[] = text
