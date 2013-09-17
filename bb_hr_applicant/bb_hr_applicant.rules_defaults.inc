@@ -9,11 +9,11 @@
  */
 function bb_hr_applicant_default_rules_configuration() {
   $items = array();
-  $items['rules_cv_initiate'] = entity_import('rules_config', '{ "rules_cv_initiate" : {
-      "LABEL" : "CV initiate",
+  $items['rules_cv_initialize'] = entity_import('rules_config', '{ "rules_cv_initialize" : {
+      "LABEL" : "CV initialize",
       "PLUGIN" : "reaction rule",
-      "REQUIRES" : [ "rules", "profile2" ],
-      "ON" : { "user_insert" : [], "profile2_update" : [] },
+      "REQUIRES" : [ "rules" ],
+      "ON" : { "user_update" : [], "user_insert" : [] },
       "IF" : [
         { "user_has_role" : {
             "account" : [ "account" ],
