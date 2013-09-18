@@ -15,6 +15,7 @@ function bb_hr_application_user_default_permissions() {
     'name' => 'access rules link job_add_application',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
       'applicant' => 'applicant',
     ),
     'module' => 'rules_link',
