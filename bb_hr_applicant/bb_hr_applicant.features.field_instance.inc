@@ -390,7 +390,7 @@ function bb_hr_applicant_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -417,37 +417,6 @@ function bb_hr_applicant_field_default_field_instances() {
       ),
       'type' => 'date_select',
       'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_cv_job_preferences-field_cv_pref_career_status'
-  $field_instances['field_collection_item-field_cv_job_preferences-field_cv_pref_career_status'] = array(
-    'bundle' => 'field_cv_job_preferences',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_cv_pref_career_status',
-    'label' => 'Career Status',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 2,
     ),
   );
 
@@ -481,7 +450,7 @@ function bb_hr_applicant_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 
@@ -502,7 +471,7 @@ function bb_hr_applicant_field_default_field_instances() {
           'thousand_separator' => ' ',
         ),
         'type' => 'number_decimal',
-        'weight' => 4,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -552,7 +521,7 @@ function bb_hr_applicant_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -568,7 +537,7 @@ function bb_hr_applicant_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 5,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -599,7 +568,7 @@ function bb_hr_applicant_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -617,7 +586,7 @@ function bb_hr_applicant_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -1640,7 +1609,6 @@ function bb_hr_applicant_field_default_field_instances() {
   t('Available to start');
   t('Birthday');
   t('CV State');
-  t('Career Status');
   t('Company Link');
   t('Company Location');
   t('Company Name');
