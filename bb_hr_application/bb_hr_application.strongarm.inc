@@ -62,6 +62,24 @@ function bb_hr_application_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_access_application';
+  $strongarm->value = array(
+    'view_own' => array(
+      0 => 4,
+      1 => 5,
+      2 => 3,
+    ),
+    'view' => array(
+      0 => 4,
+      1 => 3,
+    ),
+    'per_node' => 1,
+  );
+  $export['content_access_application'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__application';
   $strongarm->value = array(
     'view_modes' => array(),
