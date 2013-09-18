@@ -10,6 +10,24 @@
 function bb_hr_applicant_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer profile types'.
+  $permissions['administer profile types'] = array(
+    'name' => 'administer profile types',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'profile2',
+  );
+
+  // Exported permission: 'administer profiles'.
+  $permissions['administer profiles'] = array(
+    'name' => 'administer profiles',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'profile2',
+  );
+
   // Exported permission: 'create field_cv_attachment_file'.
   $permissions['create field_cv_attachment_file'] = array(
     'name' => 'create field_cv_attachment_file',
@@ -28,6 +46,15 @@ function bb_hr_applicant_user_default_permissions() {
       'applicant' => 'applicant',
     ),
     'module' => 'field_permissions',
+  );
+
+  // Exported permission: 'edit any cv profile'.
+  $permissions['edit any cv profile'] = array(
+    'name' => 'edit any cv profile',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'profile2',
   );
 
   // Exported permission: 'edit field_cv_attachment_file'.
@@ -76,6 +103,16 @@ function bb_hr_applicant_user_default_permissions() {
       'applicant' => 'applicant',
     ),
     'module' => 'field_permissions',
+  );
+
+  // Exported permission: 'view any cv profile'.
+  $permissions['view any cv profile'] = array(
+    'name' => 'view any cv profile',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
+    ),
+    'module' => 'profile2',
   );
 
   // Exported permission: 'view field_cv_attachment_file'.
