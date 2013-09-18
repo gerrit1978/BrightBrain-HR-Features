@@ -57,11 +57,11 @@ function bb_hr_job_field_group_info() {
     'label' => 'Beschrijving',
     'weight' => '3',
     'children' => array(
-      0 => 'field_job_description',
+      0 => 'field_job_call_to_action',
       1 => 'field_job_company_description',
-      2 => 'field_job_profile',
+      2 => 'field_job_description',
       3 => 'field_job_offer',
-      4 => 'field_job_call_to_action',
+      4 => 'field_job_profile',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
