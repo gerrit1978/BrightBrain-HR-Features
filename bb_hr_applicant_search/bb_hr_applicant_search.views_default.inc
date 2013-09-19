@@ -32,6 +32,7 @@ function bb_hr_applicant_search_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'entity';
+  $handler->display->display_options['row_options']['view_mode'] = 'teaser';
   /* Veld: Indexed Profiel: Profiel ID */
   $handler->display->display_options['fields']['pid']['id'] = 'pid';
   $handler->display->display_options['fields']['pid']['table'] = 'search_api_index_cv_index';
@@ -39,7 +40,7 @@ function bb_hr_applicant_search_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'resumes';
+  $handler->display->display_options['path'] = 'search/cv';
   $translatables['cvs'] = array(
     t('Master'),
     t('CVs'),

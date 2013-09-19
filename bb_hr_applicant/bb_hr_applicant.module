@@ -5,3 +5,16 @@
  */
 
 include_once 'bb_hr_applicant.features.inc';
+
+/**
+ * Implements hook_theme
+ */
+function bb_hr_applicant_theme() {
+  return array(
+    // Register the template specific for the resume profile teaser.
+    'profile2__cv__teaser' => array(
+    'render element' => 'elements',
+    'template' => 'profile--cv--teaser',
+    ),
+  );
+}
