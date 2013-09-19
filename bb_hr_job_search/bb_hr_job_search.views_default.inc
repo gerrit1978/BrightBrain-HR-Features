@@ -67,7 +67,7 @@ function bb_hr_job_search_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'jobs';
+  $handler->display->display_options['path'] = 'search/job';
   $translatables['jobs'] = array(
     t('Master'),
     t('Jobs'),
@@ -88,7 +88,6 @@ function bb_hr_job_search_views_default_views() {
     t('Page'),
   );
   $export['jobs'] = $view;
-
 
   $view = new view();
   $view->name = 'jobs_front';

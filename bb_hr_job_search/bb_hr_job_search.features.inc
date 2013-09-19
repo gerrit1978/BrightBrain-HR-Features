@@ -160,7 +160,8 @@ function bb_hr_job_search_default_search_api_server() {
     "options" : {
       "database" : "default:default",
       "min_chars" : "1",
-      "indexes" : { "job_index" : {
+      "indexes" : {
+        "job_index" : {
           "type" : {
             "table" : "search_api_db_job_index_type",
             "type" : "string",
@@ -233,6 +234,58 @@ function bb_hr_job_search_default_search_api_server() {
           },
           "field_job_skills_it:parents_all" : {
             "table" : "search_api_db_job_index_field_job_skills_it_parents_all",
+            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
+            "boost" : "1.0"
+          }
+        },
+        "cv_index" : {
+          "search_api_language" : {
+            "table" : "search_api_db_cv_index_search_api_language",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "search_api_viewed" : {
+            "table" : "search_api_db_cv_index_search_api_viewed",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "field_cv_job_preferences:field_cv_pref_career_status" : {
+            "table" : "search_api_db_cv_index_field_cv_job_preferences_field_cv_pref_",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "field_cv_job_preferences:field_cv_pref_field_of_work" : {
+            "table" : "search_api_db_cv_index_field_cv_job_preferences_field_cv_pre_1",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_cv_work_experience:field_cv_pref_field_of_work" : {
+            "table" : "search_api_db_cv_index_field_cv_work_experience_field_cv_pref_",
+            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
+            "boost" : "1.0"
+          },
+          "field_cv_work_experience:field_cv_workxp_company_name" : {
+            "table" : "search_api_db_cv_index_field_cv_work_experience_field_cv_workx",
+            "type" : "list\\u003Cstring\\u003E",
+            "boost" : "1.0"
+          },
+          "field_cv_education:field_cv_edu_field_of_study:parents_all" : {
+            "table" : "search_api_db_cv_index_field_cv_education_field_cv_edu_field_o",
+            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
+            "boost" : "1.0"
+          },
+          "field_cv_languages:field_cv_languages_language:term" : {
+            "table" : "search_api_db_cv_index_field_cv_languages_field_cv_languages_l",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_cv_general_skills:field_cv_gen_skills_skills_level:term:parents_all" : {
+            "table" : "search_api_db_cv_index_field_cv_general_skills_field_cv_gen_sk",
+            "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
+            "boost" : "1.0"
+          },
+          "field_cv_it_skills:field_cv_it_skills_skills_level:term:parents_all" : {
+            "table" : "search_api_db_cv_index_field_cv_it_skills_field_cv_it_skills_s",
             "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
             "boost" : "1.0"
           }
