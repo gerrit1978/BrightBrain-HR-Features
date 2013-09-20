@@ -5,3 +5,23 @@
  */
 
 include_once 'bb_hr_admin.features.inc';
+
+/**
+ * Implements hook_menu
+ */
+function bb_hr_admin_menu() {
+  $items = array();
+
+	$items['admin/bb-hr'] = array(
+		'title' => 'BB HR Admin',
+		'description' => 'Administer HR content.',
+		'position' => 'right',
+		'weight' => -11,
+		'page callback' => 'system_admin_menu_block_page',
+		'access arguments' => array('access administration pages'),
+		'file' =>  '/system.admin.inc',
+		'file path' => drupal_get_path('module', 'system'),
+	);
+	
+	return $items;
+}
