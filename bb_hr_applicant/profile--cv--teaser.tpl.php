@@ -27,14 +27,17 @@
  * @see template_preprocess_entity()
  * @see template_process()
  */
-$entity = $content['field_cv_personal_information'][0]['entity']['field_collection_item'];
-if (is_array($entity)) {
-  foreach ($entity as $key => $value) {
-    $field_wrapper = entity_metadata_wrapper('field_collection_item', $key);
-    $field_photo = $field_wrapper->field_cv_pers_photo->value();
-    $image_path = image_style_url('thumbnail', $field_photo['uri']);
-    $image_rendered = theme('image', array('path' => $image_path));
-  }
+$image_rendered = "";
+if (isset($content['field_cv_personal_information'][0])) {
+	$entity = $content['field_cv_personal_information'][0]['entity']['field_collection_item'];
+	if (is_array($entity)) {
+	  foreach ($entity as $key => $value) {
+	    $field_wrapper = entity_metadata_wrapper('field_collection_item', $key);
+	    $field_photo = $field_wrapper->field_cv_pers_photo->value();
+	    $image_path = image_style_url('thumbnail', $field_photo['uri']);
+	    $image_rendered = theme('image', array('path' => $image_path));
+	  }
+	}
 }
 
 ?>
