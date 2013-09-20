@@ -34,3 +34,34 @@ function bb_hr_application_form_context_admin_node_form_wrapper_alter(&$form, &$
     }
   }
 }
+
+
+/**
+ * Returns TRUE if threre are job applications for a certain job.
+ *
+ * @param $applicant
+ *   Either the uid of an applicant user or the user object itself.
+ *
+ * @param $node_id
+ *   The node id of a $job offering.
+ *
+ * @return bool
+ *   TRUE if there is an application for this job and applicant, else FALSE.
+ */
+function bb_hr_application_exists_for_job($applicant, $node_id) {
+
+  $application_exists = &drupal_static(__FUNCTION__);
+
+  $applicant = is_object($applicant) ? $applicant : user_load($applicant);
+  if (!isset($application_exists[$applicant->uid])) {
+    $query = db_select('field_data_field_application_job_ref', 'jr');
+    $query->addField('jr', 'field_application_job_ref_target_id');
+    $query->innerJoin('node', 'n', 'jr.entity_id = n.nid');
+    $query->condition('n.uid', $applicant->uid);
+    
+    $result = $query->execute()->fetchCol();
+    $application_exists[$applicant->uid] = $result;
+  }
+
+  return in_array($node_id->nid, $application_exists[$applicant->uid]) ;
+}

@@ -58,8 +58,11 @@ function bb_hr_application_default_rules_configuration() {
   $items['rules_link_condition_job_add_application'] = entity_import('rules_config', '{ "rules_link_condition_job_add_application" : {
       "LABEL" : "Rules link: Job Add Application condition",
       "PLUGIN" : "and",
+      "REQUIRES" : [ "bb_hr_application" ],
       "USES VARIABLES" : { "node" : { "type" : "node", "label" : "node" } },
-      "AND" : []
+      "AND" : [
+        { "NOT bb_hr_application_exists_job" : { "applicant" : [ "site:current-user" ], "job" : [ "node" ] } }
+      ]
     }
   }');
   $items['rules_link_set_job_add_application'] = entity_import('rules_config', '{ "rules_link_set_job_add_application" : {
