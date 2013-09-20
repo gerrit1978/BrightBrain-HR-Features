@@ -5,3 +5,32 @@
  */
 
 include_once 'bb_hr_application.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function bb_hr_application_form_context_admin_node_form_wrapper_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['#node']) && $form['#node']->type == "application") {
+    $job_id = isset($form['#node']->field_application_job_ref[LANGUAGE_NONE][0]['target_id']) ? $form['#node']->field_application_job_ref[LANGUAGE_NONE][0]['target_id'] : FALSE;
+    if ($job_id) {
+      $job = node_load($job_id);
+      if (!$job) {
+        return;
+      }
+      // Add a link to the job and imitate the field structure so that it has
+      // a consistent look in most cases.
+      $markup = '<div class="field field-application-job-ref field-label-inline clearfix"><div class="field-label">' .
+        t('Job') . ':&nbsp;</div><div class="field-items"><div class="field-item even">' .
+        l($job->title, 'node/' . $job->nid) .
+        '</div></div></div>';
+
+      $form['job_info'] = array(
+        '#markup' => $markup,
+        '#weight' => -99,
+      );
+
+      // Rename the save button.
+      $form['actions']['submit']['#value'] = t('Send application');
+    }
+  }
+}
