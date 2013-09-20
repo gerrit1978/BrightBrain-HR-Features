@@ -27,6 +27,16 @@
  * @see template_preprocess_entity()
  * @see template_process()
  */
+$entity = $content['field_cv_personal_information'][0]['entity']['field_collection_item'];
+if (is_array($entity)) {
+  foreach ($entity as $key => $value) {
+    $field_wrapper = entity_metadata_wrapper('field_collection_item', $key);
+    $field_photo = $field_wrapper->field_cv_pers_photo->value();
+    $image_path = image_style_url('thumbnail', $field_photo['uri']);
+    $image_rendered = theme('image', array('path' => $image_path));
+  }
+}
+
 ?>
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if (!$page): ?>
@@ -37,6 +47,9 @@
   <div class="content"<?php print $content_attributes; ?>>
     <div class="cv-teaser-container clearfix">
       <div class="resume-teaser-info clearfix">
+        <?php if ($image_rendered): ?>
+          <div class="cv-photo"><?php print $image_rendered; ?></div>
+        <?php endif; ?>
         <?php print render($content['field_cv_job_preferences']); ?>
         <div class="links">
           <?php print render($content['links']); ?>

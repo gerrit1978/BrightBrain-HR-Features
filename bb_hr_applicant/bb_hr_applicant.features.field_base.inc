@@ -18,7 +18,7 @@ function bb_hr_applicant_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_cv_attachment_file',
     'field_permissions' => array(
-      'type' => 2,
+      'type' => 0,
     ),
     'foreign keys' => array(
       'fid' => array(
@@ -555,7 +555,7 @@ function bb_hr_applicant_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_cv_pers_photo',
     'field_permissions' => array(
-      'type' => 2,
+      'type' => 0,
     ),
     'foreign keys' => array(
       'fid' => array(
