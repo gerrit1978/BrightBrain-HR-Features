@@ -18,14 +18,3 @@ function bb_hr_applicant_theme() {
     ),
   );
 }
-
-/**
- * Implements hook_profile2_view
- */
-function bb_hr_applicant_profile2_view($profile, $view_mode, $langcode) {
-
-  $profile_wrapper = entity_metadata_wrapper('profile2', $profile);
-  $user_name = $profile_wrapper->user->value()->name;
-
-  $profile->label = $user_name;
-}
