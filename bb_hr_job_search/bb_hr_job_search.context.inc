@@ -107,23 +107,29 @@ function bb_hr_job_search_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views--exp-jobs-page' => array(
+          'module' => 'views',
+          'delta' => '-exp-jobs-page',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'views-jobs_front-block' => array(
           'module' => 'views',
           'delta' => 'jobs_front-block',
           'region' => 'content',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'facetapi-qO2aQ1pOhH01tykI7iO0fVyYYhsLtVTK' => array(
           'module' => 'facetapi',
           'delta' => 'qO2aQ1pOhH01tykI7iO0fVyYYhsLtVTK',
           'region' => 'content',
-          'weight' => '-9',
+          'weight' => '-8',
         ),
         'facetapi-v8OT33llPN3ejhlfbqjoLxQDpoQrpr2g' => array(
           'module' => 'facetapi',
           'delta' => 'v8OT33llPN3ejhlfbqjoLxQDpoQrpr2g',
           'region' => 'content',
-          'weight' => '-8',
+          'weight' => '-7',
         ),
       ),
     ),
