@@ -35,3 +35,37 @@ function bb_hr_job_node_info() {
   );
   return $items;
 }
+
+/**
+ * Implements hook_default_rules_link().
+ */
+function bb_hr_job_default_rules_link() {
+  $items = array();
+  $items['job_publish'] = entity_import('rules_link', '{
+    "settings" : {
+      "text" : "Publish",
+      "link_type" : "token",
+      "bundles" : { "job" : "job" },
+      "entity_link" : 1
+    },
+    "name" : "job_publish",
+    "label" : "Job Publish",
+    "path" : "job_publish",
+    "entity_type" : "node",
+    "rdf_mapping" : []
+  }');
+  $items['job_unpublish'] = entity_import('rules_link', '{
+    "settings" : {
+      "text" : "Unpublish",
+      "link_type" : "token",
+      "bundles" : { "job" : "job" },
+      "entity_link" : 1
+    },
+    "name" : "job_unpublish",
+    "label" : "Job Unpublish",
+    "path" : "job_unpublish",
+    "entity_type" : "node",
+    "rdf_mapping" : []
+  }');
+  return $items;
+}
