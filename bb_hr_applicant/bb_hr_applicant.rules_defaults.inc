@@ -56,5 +56,21 @@ function bb_hr_applicant_default_rules_configuration() {
       ]
     }
   }');
+  $items['rules_cv_update_status'] = entity_import('rules_config', '{ "rules_cv_update_status" : {
+      "LABEL" : "CV update status",
+      "PLUGIN" : "reaction rule",
+      "REQUIRES" : [ "rules", "bb_hr_applicant", "profile2" ],
+      "ON" : { "profile2_update" : [] },
+      "IF" : [
+        { "data_is" : { "data" : [ "profile2:type" ], "value" : "cv" } },
+        { "data_is" : { "data" : [ "profile2:field-cv-state" ], "value" : "incomplete" } },
+        { "bb_hr_applicant_cv_complete" : { "profile" : [ "profile2" ] } }
+      ],
+      "DO" : [
+        { "data_set" : { "data" : [ "profile2:field-cv-state" ], "value" : "visible" } },
+        { "drupal_message" : { "message" : "All required fields have been completed. The public data of your resume is now visible to recruiters." } }
+      ]
+    }
+  }');
   return $items;
 }

@@ -120,15 +120,18 @@ function bb_hr_applicant_cv_required_fields() {
  *   TRUE if completed.
  */
 function bb_hr_applicant_cv_is_complete($profile) {
-  return TRUE;
+
 
   if ($profile && isset($profile->type) && $profile->type == "cv") {
+    $flag = TRUE;
     foreach (bb_hr_applicant_cv_required_fields() as $field) {
       if (!isset($profile->$field) || empty($profile->$field)) {
-        return FALSE;
+        $flag = FALSE;
       }
     }
-    return TRUE;
+  } else {
+    $flag = FALSE;
   }
-  return FALSE;
+  
+  return $flag;
 }
