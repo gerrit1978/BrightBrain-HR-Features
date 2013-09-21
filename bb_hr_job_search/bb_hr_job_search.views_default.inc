@@ -48,6 +48,11 @@ function bb_hr_job_search_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
+  /* Sort criterion: Indexed Node: Wijzigingsdatum */
+  $handler->display->display_options['sorts']['changed']['id'] = 'changed';
+  $handler->display->display_options['sorts']['changed']['table'] = 'search_api_index_job_index';
+  $handler->display->display_options['sorts']['changed']['field'] = 'changed';
+  $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
   /* Filter criterion: Indexed Node: Titel */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'search_api_index_job_index';
@@ -63,6 +68,13 @@ function bb_hr_job_search_views_default_views() {
     3 => 0,
     4 => 0,
     5 => 0,
+  );
+  /* Filter criterion: Indexed Node: Status */
+  $handler->display->display_options['filters']['field_job_workflow_state']['id'] = 'field_job_workflow_state';
+  $handler->display->display_options['filters']['field_job_workflow_state']['table'] = 'search_api_index_job_index';
+  $handler->display->display_options['filters']['field_job_workflow_state']['field'] = 'field_job_workflow_state';
+  $handler->display->display_options['filters']['field_job_workflow_state']['value'] = array(
+    'published' => 'published',
   );
 
   /* Display: Page */
@@ -124,6 +136,13 @@ function bb_hr_job_search_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'search_api_index_job_index';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Indexed Node: Status */
+  $handler->display->display_options['filters']['field_job_workflow_state']['id'] = 'field_job_workflow_state';
+  $handler->display->display_options['filters']['field_job_workflow_state']['table'] = 'search_api_index_job_index';
+  $handler->display->display_options['filters']['field_job_workflow_state']['field'] = 'field_job_workflow_state';
+  $handler->display->display_options['filters']['field_job_workflow_state']['value'] = array(
+    'published' => 'published',
+  );
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
