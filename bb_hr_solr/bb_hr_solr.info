@@ -1,0 +1,11 @@
+name = BB HR Solr
+description = Solr functionalities
+core = 7.x
+package = Features
+version = 7.x-1.0-alfa1
+project = bb_hr_solr
+features[features_api][] = api:2
+features[search_api_server][] = solr_server
+features_exclude[dependencies][entity] = entity
+features_exclude[dependencies][search_api] = search_api
+features_exclude[dependencies][search_api_solr] = search_api_solr
