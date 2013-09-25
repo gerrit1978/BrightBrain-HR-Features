@@ -83,7 +83,6 @@ function bb_hr_job_block_configure($delta = '') {
 
 /**
  * Implements hook_block_save
- * TODO: add other variables here
  *
  */
 function bb_hr_job_block_save($delta = '', $edit = array()) {
@@ -111,6 +110,35 @@ function bb_hr_job_theme($existing, $type, $theme, $path) {
       'template' => 'bb_hr_job_apply_linkedin',
     ),
   );
+}
+
+
+/**
+ * Implements hook_node_access
+ */
+function bb_hr_job_node_access($node, $op, $account) {
+  $type = is_string($node) ? $node : $node->type;
+
+  if ($type == 'job' && $op == 'view') {
+    $workflow_state_field = field_get_items('node', $node, 'field_job_workflow_state');
+    if ($workflow_state_field[0]['value'] == 'unpublished') {
+      // check for roles
+      $roles = $account->roles;
+      $ret = NODE_ACCESS_DENY;
+      if (is_array($roles)) {
+        $allow = array('recruiter', 'administrator');
+        foreach ($roles as $role) {
+          if (in_array($role, $allow)) {
+            $ret = NODE_ACCESS_ALLOW;
+          }
+        }
+      }
+      return $ret;
+    }
+  }
+
+  // Returning nothing from this function would have the same effect.
+  return NODE_ACCESS_IGNORE;
 }
 
 
