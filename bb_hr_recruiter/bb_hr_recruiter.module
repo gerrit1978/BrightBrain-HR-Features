@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the BB HR Recruiter feature.
  */
+
+include_once 'bb_hr_recruiter.features.inc';
