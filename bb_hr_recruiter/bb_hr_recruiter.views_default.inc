@@ -434,6 +434,7 @@ function bb_hr_recruiter_views_default_views() {
 
   /* Display: All jobs */
   $handler = $view->new_display('page', 'All jobs', 'page');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['path'] = 'admin/recruiter/jobs';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'All Jobs';
