@@ -57,6 +57,36 @@ function bb_hr_application_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_application_shortlist'
+  $field_bases['field_application_shortlist'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_application_shortlist',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'Not in shortlist',
+        1 => 'In shortlist',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_job_application'
   $field_bases['field_job_application'] = array(
     'active' => 1,
