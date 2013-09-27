@@ -15,6 +15,7 @@ function bb_hr_job_user_default_permissions() {
     'name' => 'access rules link job_publish',
     'roles' => array(
       'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
     ),
     'module' => 'rules_link',
   );
@@ -24,6 +25,7 @@ function bb_hr_job_user_default_permissions() {
     'name' => 'access rules link job_unpublish',
     'roles' => array(
       'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
     ),
     'module' => 'rules_link',
   );
