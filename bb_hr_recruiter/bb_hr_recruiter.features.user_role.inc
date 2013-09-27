@@ -14,6 +14,7 @@ function bb_hr_recruiter_user_default_roles() {
   $roles['recruiter'] = array(
     'name' => 'recruiter',
     'weight' => 3,
+    'machine_name' => '',
   );
 
   return $roles;

@@ -30,6 +30,36 @@ function bb_hr_recruiter_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: 'create job content'.
+  $permissions['create job content'] = array(
+    'name' => 'create job content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own job content'.
+  $permissions['delete own job content'] = array(
+    'name' => 'delete own job content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own job content'.
+  $permissions['edit own job content'] = array(
+    'name' => 'edit own job content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'view the administration theme'.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
