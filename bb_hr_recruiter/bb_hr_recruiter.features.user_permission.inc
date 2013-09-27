@@ -30,6 +30,26 @@ function bb_hr_recruiter_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: 'access rules link application_put_in_shortlist'.
+  $permissions['access rules link application_put_in_shortlist'] = array(
+    'name' => 'access rules link application_put_in_shortlist',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
+    ),
+    'module' => 'rules_link',
+  );
+
+  // Exported permission: 'access rules link application_remove_from_shortlis'.
+  $permissions['access rules link application_remove_from_shortlis'] = array(
+    'name' => 'access rules link application_remove_from_shortlis',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
+    ),
+    'module' => 'rules_link',
+  );
+
   // Exported permission: 'create job content'.
   $permissions['create job content'] = array(
     'name' => 'create job content',
