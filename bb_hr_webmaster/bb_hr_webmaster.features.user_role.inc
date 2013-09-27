@@ -14,6 +14,7 @@ function bb_hr_webmaster_user_default_roles() {
   $roles['webmaster'] = array(
     'name' => 'webmaster',
     'weight' => 5,
+    'machine_name' => '',
   );
 
   return $roles;

@@ -14,6 +14,7 @@ function bb_hr_applicant_user_default_roles() {
   $roles['applicant'] = array(
     'name' => 'applicant',
     'weight' => 4,
+    'machine_name' => '',
   );
 
   return $roles;
