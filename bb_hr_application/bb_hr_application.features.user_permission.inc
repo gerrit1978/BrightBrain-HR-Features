@@ -16,7 +16,6 @@ function bb_hr_application_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
-      'applicant' => 'applicant',
     ),
     'module' => 'rules_link',
   );

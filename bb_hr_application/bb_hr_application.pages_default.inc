@@ -54,7 +54,7 @@ function bb_hr_application_default_page_manager_pages() {
           'name' => 'role',
           'settings' => array(
             'rids' => array(
-              0 => 5,
+              0 => 115362423,
             ),
           ),
           'context' => 'logged-in-user',
@@ -166,7 +166,7 @@ function bb_hr_application_default_page_manager_pages() {
           'name' => 'role',
           'settings' => array(
             'rids' => array(
-              0 => 5,
+              0 => 115362423,
             ),
           ),
           'context' => 'logged-in-user',
@@ -240,7 +240,7 @@ function bb_hr_application_default_page_manager_pages() {
           'name' => 'role',
           'settings' => array(
             'rids' => array(
-              0 => 5,
+              0 => 115362423,
             ),
           ),
           'context' => 'logged-in-user',
