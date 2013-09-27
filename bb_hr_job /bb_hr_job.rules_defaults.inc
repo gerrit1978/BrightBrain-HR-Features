@@ -17,7 +17,7 @@ function bb_hr_job_default_rules_configuration() {
       "AND" : [
         { "user_has_role" : {
             "account" : [ "site:current-user" ],
-            "roles" : { "value" : { "3" : "3", "4" : "4" } },
+            "roles" : { "value" : { "30037204" : "30037204", "100482362" : "100482362" } },
             "operation" : "OR"
           }
         },
@@ -34,7 +34,7 @@ function bb_hr_job_default_rules_configuration() {
       "AND" : [
         { "user_has_role" : {
             "account" : [ "site:current-user" ],
-            "roles" : { "value" : { "3" : "3", "4" : "4" } },
+            "roles" : { "value" : { "30037204" : "30037204", "100482362" : "100482362" } },
             "operation" : "OR"
           }
         },
