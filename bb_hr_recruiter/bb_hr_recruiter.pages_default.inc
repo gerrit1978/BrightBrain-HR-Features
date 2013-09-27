@@ -22,8 +22,8 @@ function bb_hr_recruiter_default_page_manager_pages() {
         'name' => 'role',
         'settings' => array(
           'rids' => array(
-            0 => 3,
-            1 => 4,
+            0 => 30037204,
+            1 => 100482362,
           ),
         ),
         'context' => 'logged-in-user',

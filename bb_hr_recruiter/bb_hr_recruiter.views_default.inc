@@ -206,8 +206,8 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    3 => '3',
-    4 => '4',
+    30037204 => '30037204',
+    100482362 => '100482362',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -445,6 +445,8 @@ function bb_hr_recruiter_views_default_views() {
 
   /* Display: My jobs */
   $handler = $view->new_display('page', 'My jobs', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'My Managed Jobs';
   $handler->display->display_options['path'] = 'admin/recruiter/my-jobs';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'My Jobs';
@@ -476,6 +478,7 @@ function bb_hr_recruiter_views_default_views() {
     t('Alle'),
     t('All jobs'),
     t('My jobs'),
+    t('My Managed Jobs'),
   );
   $export['recruiter_jobs'] = $view;
 
