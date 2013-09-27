@@ -586,9 +586,17 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = 'Applications';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Applications';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'All Applications';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = 'node/[nid]/applications';
+  /* Veld: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = 'Shortlist';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'Shortlist Applications';
+  $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'node/[nid]/applications/shortlist';
   /* Sort criterion: Inhoud: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -662,6 +670,9 @@ function bb_hr_recruiter_views_default_views() {
     t('Updated date'),
     t('Naam'),
     t('Applications'),
+    t('All Applications'),
+    t('Shortlist'),
+    t('Shortlist Applications'),
     t('Alle'),
     t('All jobs'),
     t('My jobs'),
