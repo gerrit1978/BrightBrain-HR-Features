@@ -14,6 +14,56 @@ function bb_hr_applicant_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function bb_hr_applicant_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_flag_default_flags().
+ */
+function bb_hr_applicant_flag_default_flags() {
+  $flags = array();
+  // Exported flag: "Job Bookmarks".
+  $flags['job_bookmarks'] = array(
+    'entity_type' => 'node',
+    'title' => 'Job Bookmarks',
+    'global' => 0,
+    'types' => array(
+      0 => 'job',
+    ),
+    'flag_short' => 'Bookmark Job',
+    'flag_long' => '',
+    'flag_message' => '',
+    'unflag_short' => 'Unmark Job',
+    'unflag_long' => '',
+    'unflag_message' => '',
+    'unflag_denied_text' => '',
+    'link_type' => 'toggle',
+    'weight' => 0,
+    'show_in_links' => array(
+      'full' => 'full',
+      'teaser' => 'teaser',
+      'rss' => 0,
+      'token' => 0,
+    ),
+    'show_as_field' => 0,
+    'show_on_form' => 0,
+    'access_author' => '',
+    'show_contextual_link' => 0,
+    'i18n' => 0,
+    'api_version' => 3,
+    'module' => 'bb_hr_applicant',
+    'locked' => array(
+      0 => 'name',
+    ),
+  );
+  return $flags;
+
+}
+
+/**
  * Implements hook_default_profile2_type().
  */
 function bb_hr_applicant_default_profile2_type() {
