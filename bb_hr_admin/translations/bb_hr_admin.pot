@@ -1,0 +1,272 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  bb_hr_admin.features.menu_custom.inc: n/a
+#  bb_hr_admin.features.menu_links.inc: n/a
+#  bb_hr_admin.module: n/a
+#  bb_hr_admin.info: n/a
+#  bb_hr_admin.views_default.inc: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-09-30 09:19+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: bb_hr_admin.features.menu_custom.inc:21
+msgid "Het <em>Beheermenu</em> bevat links voor beheertaken."
+msgstr ""
+
+#: bb_hr_admin.features.menu_custom.inc:22
+msgid "Management"
+msgstr ""
+
+#: bb_hr_admin.features.menu_links.inc:72 bb_hr_admin.module:16 bb_hr_admin.info:0
+msgid "BB HR Admin"
+msgstr ""
+
+#: bb_hr_admin.features.menu_links.inc:73 bb_hr_admin.views_default.inc:637
+msgid "CV administration"
+msgstr ""
+
+#: bb_hr_admin.features.menu_links.inc:74
+msgid "User administration"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:138;461;886
+msgid "Master"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:139
+msgid "Admin Applications"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:140;463;638;888
+msgid "more"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:141;464;639;889
+msgid "Apply"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:142;465;640;890
+msgid "Opnieuw instellen"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:143;466;641;891
+msgid "Sort by"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:144;467;642;892
+msgid "Asc"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:145;468;643;893
+msgid "Desc"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:146;469;644;894
+msgid "Items per page"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:147;470;645;895
+msgid "- All -"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:148;471;646;896
+msgid "Offset"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:149;472;647;897
+msgid "« eerste"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:150;473;648;898
+msgid "‹ vorige"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:151;474;649;899
+msgid "volgende ›"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:152;475;650;900
+msgid "laatste »"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:153
+msgid "Job"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:154;476
+msgid "author"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:155;654
+msgid "Profiel"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:156
+msgid "field collection item from field_cv_personal_information"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:157
+msgid "Post date"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:158;479
+msgid "Titel"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:159
+msgid "Job Title"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:160
+msgid "Firstname"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:161
+msgid "Applicant"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:162
+msgid "[field_cv_pers_firstname] [field_cv_pers_lastname]"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:163;484;658;914
+msgid "Page"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:462
+msgid "Jobs administration"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:477
+msgid "Inhoud"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:478
+msgid "Type"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:480
+msgid "Updated date"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:481
+msgid "Status"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:482
+msgid "Naam"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:483
+msgid "Applications"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:636
+msgid "Defaults"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:651
+msgid "Profile type"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:652
+msgid "Gebruiker"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:653
+msgid "Uid"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:655
+msgid "Aangemaakt"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:656
+msgid "Changed"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:657
+msgid "User name"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:887
+msgid "Gebruikers"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:901
+msgid "Displaying @start - @end of @total users."
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:902
+msgid "<a href=\"/admin/people/create\">Add user</a>"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:903
+msgid "No users found."
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:904
+msgid "Gebruikersnaam"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:905
+msgid "E-mailadres"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:906
+msgid "Rollen"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:907
+msgid "Actief"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:908
+msgid "Geregistreerd sinds"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:909
+msgid "Laatste toegang"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:910
+msgid "Laatste login"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:911
+msgid "Name (text)"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:912
+msgid "Name (autcomplete)"
+msgstr ""
+
+#: bb_hr_admin.views_default.inc:913
+msgid "Rol"
+msgstr ""
+
+#: bb_hr_admin.module:17
+msgid "Administer HR content."
+msgstr ""
+
+#: bb_hr_admin.info:0
+msgid "General administration tools and permissions"
+msgstr ""
+
+#: bb_hr_admin.info:0
+msgid "BrightBrain"
+msgstr ""
+
