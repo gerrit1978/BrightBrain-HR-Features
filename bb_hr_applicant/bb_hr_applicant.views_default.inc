@@ -22,7 +22,7 @@ function bb_hr_applicant_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'My Job Bookmarks';
+  $handler->display->display_options['title'] = 'Mijn gemarkeerde Jobs';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
@@ -92,7 +92,7 @@ function bb_hr_applicant_views_default_views() {
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $translatables['jobs_bookmarks'] = array(
     t('Master'),
-    t('My Job Bookmarks'),
+    t('Mijn gemarkeerde Jobs'),
     t('more'),
     t('Apply'),
     t('Opnieuw instellen'),
@@ -106,7 +106,7 @@ function bb_hr_applicant_views_default_views() {
     t('‹ vorige'),
     t('volgende ›'),
     t('laatste »'),
-    t('flag'),
+    t('markeren'),
     t('Page'),
   );
   $export['jobs_bookmarks'] = $view;

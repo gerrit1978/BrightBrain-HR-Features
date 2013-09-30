@@ -17,7 +17,7 @@ function bb_hr_applicant_default_rules_configuration() {
       "IF" : [
         { "user_has_role" : {
             "account" : [ "account" ],
-            "roles" : { "value" : { "3" : "3", "5" : "5" } },
+            "roles" : { "value" : { "30037204" : "30037204", "115362423" : "115362423" } },
             "operation" : "OR"
           }
         },
