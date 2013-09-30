@@ -1,0 +1,89 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  bb_hr_application.features.field_instance.inc: n/a
+#  bb_hr_application.features.inc: n/a
+#  bb_hr_application.rules.inc: n/a
+#  bb_hr_application.module: n/a
+#  bb_hr_application.info: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-09-30 14:23+0200\n"
+"PO-Revision-Date: 2013-09-30 14:49+0100\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: bb_hr_application.features.field_instance.inc:217
+#: bb_hr_application.features.inc:63
+msgid "Application"
+msgstr "Sollicitatie"
+
+#: bb_hr_application.features.field_instance.inc:218
+msgid "Audience"
+msgstr "Doelpubliek"
+
+#: bb_hr_application.features.field_instance.inc:219
+msgid "Body"
+msgstr "Berichttekst"
+
+#: bb_hr_application.features.field_instance.inc:220
+#: bb_hr_application.rules.inc:23 bb_hr_application.module:23
+msgid "Job"
+msgstr ""
+
+#: bb_hr_application.features.field_instance.inc:221
+msgid "Shortlisted"
+msgstr "In shortlist"
+
+#: bb_hr_application.features.inc:65
+msgid "Een sollicitatie."
+msgstr ""
+
+#: bb_hr_application.features.inc:67
+msgid "Titel"
+msgstr ""
+
+#: bb_hr_application.rules.inc:14
+msgid "Job application exists for job"
+msgstr "Job sollicitatie bestaat voor job"
+
+#: bb_hr_application.rules.inc:15
+msgid "BB HR job application"
+msgstr ""
+
+#: bb_hr_application.rules.inc:18
+msgid "Applicant"
+msgstr "Sollicitant"
+
+#: bb_hr_application.rules.inc:19
+msgid "The applicant/user who has the application."
+msgstr "De sollicitant/gebruiker die heeft gesolliciteerd."
+
+#: bb_hr_application.rules.inc:24
+msgid "The job for which the application should be."
+msgstr "De job waarvoor gesolliciteerd wordt."
+
+#: bb_hr_application.module:33
+msgid "Send application"
+msgstr "Verzend sollicitatie"
+
+#: bb_hr_application.info:0
+msgid "BB HR Application"
+msgstr ""
+
+#: bb_hr_application.info:0
+msgid "Mogelijkheid tot solliciteren"
+msgstr ""
+
+#: bb_hr_application.info:0
+msgid "BrightBrain"
+msgstr ""

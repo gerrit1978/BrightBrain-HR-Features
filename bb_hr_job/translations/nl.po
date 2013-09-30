@@ -1,0 +1,131 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  bb_hr_job.context.inc: n/a
+#  bb_hr_job.info: n/a
+#  bb_hr_job.features.field_instance.inc: n/a
+#  bb_hr_job.features.inc: n/a
+#  bb_hr_job.module: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-09-30 14:23+0200\n"
+"PO-Revision-Date: 2013-09-30 14:47+0100\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: bb_hr_job.context.inc:45
+msgid "Add blocks to job detail page"
+msgstr "Blokken toevoegen aan job detail pagina"
+
+#: bb_hr_job.context.inc:46 bb_hr_job.info:0
+msgid "BrightBrain"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:604
+msgid "Aanbod"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:605
+msgid "Bedrijfsomschrijving"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:606
+msgid "Call To Action"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:607
+msgid "Diploma"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:608
+msgid "Ervaring"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:609
+msgid "Jobomschrijving"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:610
+msgid "Profiel"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:611
+msgid "Skills Algemeen"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:612
+msgid "Skills IT"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:613
+msgid "Sollicitatie E-mail"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:614
+msgid "Status"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:615
+msgid "Studiedomein"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:616
+msgid "Talen"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:617
+msgid "Type contract"
+msgstr ""
+
+#: bb_hr_job.features.field_instance.inc:618
+msgid "Werkdomein"
+msgstr ""
+
+#: bb_hr_job.features.inc:28
+msgid "Job"
+msgstr ""
+
+#: bb_hr_job.features.inc:30
+msgid "Standaard job."
+msgstr ""
+
+#: bb_hr_job.features.inc:32
+msgid "Titel"
+msgstr ""
+
+#: bb_hr_job.module:20;36
+msgid "Apply with LinkedIn"
+msgstr "Solliciteer met LinkedIn"
+
+#: bb_hr_job.module:61
+msgid "De LinkedIn API key"
+msgstr ""
+
+#: bb_hr_job.module:67
+msgid "De bedrijfsnaam"
+msgstr ""
+
+#: bb_hr_job.module:73
+msgid "Het e-mailadres"
+msgstr ""
+
+#: bb_hr_job.module:162
+msgid "Spontaan solliciteren"
+msgstr ""
+
+#: bb_hr_job.info:0
+msgid "BB HR Job"
+msgstr ""
+
+#: bb_hr_job.info:0
+msgid "Job related functionalities."
+msgstr "Job gerelateerde functionaliteiten."

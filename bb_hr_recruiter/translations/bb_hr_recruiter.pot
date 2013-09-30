@@ -1,0 +1,225 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  bb_hr_recruiter.views_default.inc: n/a
+#  bb_hr_recruiter.module: n/a
+#  bb_hr_recruiter.info: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-09-30 14:23+0200\n"
+"PO-Revision-Date: 2013-09-30 14:44+0100\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: bb_hr_recruiter.views_default.inc:78;417;764;1061
+msgid "Master"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:79
+msgid "CV bookmarks"
+msgstr "Gemarkeerde CVs"
+
+#: bb_hr_recruiter.views_default.inc:80;419;766;1063
+msgid "more"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:81;420;767;1064
+msgid "Apply"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:82;421;768;1065
+msgid "Opnieuw instellen"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:83;422;769;1066
+msgid "Sort by"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:84;423;770;1067
+msgid "Asc"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:85;424;771;1068
+msgid "Desc"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:86;1069
+msgid "Items per page"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:87;1070
+msgid "- All -"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:88;1071
+msgid "Offset"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:89;1072
+msgid "« eerste"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:90;1073
+msgid "‹ vorige"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:91;1074
+msgid "volgende ›"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:92;1075
+msgid "laatste »"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:93
+msgid "flag"
+msgstr "markeren"
+
+#: bb_hr_recruiter.views_default.inc:94
+msgid "Profiel ID"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:95
+msgid "."
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:96
+msgid ","
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:97
+msgid "Page"
+msgstr "Pagina"
+
+#: bb_hr_recruiter.views_default.inc:418
+msgid "Recruiter Applications"
+msgstr "Recruiter Sollicitaties"
+
+#: bb_hr_recruiter.views_default.inc:425;772
+msgid "No applications found."
+msgstr "Geen sollicitaties gevonden."
+
+#: bb_hr_recruiter.views_default.inc:426;773
+msgid "Job"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:427;774;1076
+msgid "author"
+msgstr "auteur"
+
+#: bb_hr_recruiter.views_default.inc:428;775
+msgid "Profiel"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:429;776
+msgid "field collection item from field_cv_personal_information"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:430;777
+msgid "Post date"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:431;778;1079
+msgid "Naam"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:432;779
+msgid "[field_cv_pers_firstname] [field_cv_pers_lastname]"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:433;780
+msgid "CV"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:434;781
+msgid "[label]"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:435;782;1084
+msgid "Alle"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:436
+msgid "All applications for this job"
+msgstr "Alle sollicitaties voor deze job"
+
+#: bb_hr_recruiter.views_default.inc:437;784
+msgid "View panes"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:765
+msgid "Recruiter Applications Shortlist"
+msgstr "Recruiter Sollicitaties Shortlist"
+
+#: bb_hr_recruiter.views_default.inc:783
+msgid "Shortlist applications for this job"
+msgstr "Sollicitaties shortlist voor deze job"
+
+#: bb_hr_recruiter.views_default.inc:1062
+msgid "All Recruiter Jobs"
+msgstr "Alle Recruiter Jobs"
+
+#: bb_hr_recruiter.views_default.inc:1077
+msgid "Titel"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:1078
+msgid "Updated date"
+msgstr ""
+
+#: bb_hr_recruiter.views_default.inc:1080
+msgid "Applications"
+msgstr "Sollicitaties"
+
+#: bb_hr_recruiter.views_default.inc:1081
+msgid "All Applications"
+msgstr "Alle Sollicitaties"
+
+#: bb_hr_recruiter.views_default.inc:1082
+msgid "Shortlist"
+msgstr "Shortlist"
+
+#: bb_hr_recruiter.views_default.inc:1083
+msgid "Shortlist Applications"
+msgstr "Shortlist Sollicitaties"
+
+#: bb_hr_recruiter.views_default.inc:1085
+msgid "All jobs"
+msgstr "Alle jobs"
+
+#: bb_hr_recruiter.views_default.inc:1086
+msgid "My jobs"
+msgstr "Mijn jobs"
+
+#: bb_hr_recruiter.views_default.inc:1087
+msgid "My Managed Jobs"
+msgstr "Mijn beheerde Jobs"
+
+#: bb_hr_recruiter.module:16
+msgid "Recruiter"
+msgstr ""
+
+#: bb_hr_recruiter.module:17
+msgid "Recruiter functionalities."
+msgstr "Recruiter functionaliteiten."
+
+#: bb_hr_recruiter.info:0
+msgid "BB HR Recruiter"
+msgstr ""
+
+#: bb_hr_recruiter.info:0
+msgid "Recruiter related functionalities"
+msgstr "Recruiter gerelateerde functionaliteiten"
+
+#: bb_hr_recruiter.info:0
+msgid "BrightBrain"
+msgstr ""
