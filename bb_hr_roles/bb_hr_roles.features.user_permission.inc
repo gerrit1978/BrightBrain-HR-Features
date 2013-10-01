@@ -81,6 +81,15 @@ function bb_hr_roles_user_default_permissions() {
     'module' => 'rules_link',
   );
 
+  // Exported permission: 'administer flags'.
+  $permissions['administer flags'] = array(
+    'name' => 'administer flags',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'flag',
+  );
+
   // Exported permission: 'administer profile types'.
   $permissions['administer profile types'] = array(
     'name' => 'administer profile types',
@@ -164,6 +173,55 @@ function bb_hr_roles_user_default_permissions() {
       'recruiter' => 'recruiter',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'flag job_bookmarks'.
+  $permissions['flag job_bookmarks'] = array(
+    'name' => 'flag job_bookmarks',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'applicant' => 'applicant',
+    ),
+    'module' => 'flag',
+  );
+
+  // Exported permission: 'flag resume_bookmarks'.
+  $permissions['flag resume_bookmarks'] = array(
+    'name' => 'flag resume_bookmarks',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
+    ),
+    'module' => 'flag',
+  );
+
+  // Exported permission: 'unflag job_bookmarks'.
+  $permissions['unflag job_bookmarks'] = array(
+    'name' => 'unflag job_bookmarks',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'applicant' => 'applicant',
+    ),
+    'module' => 'flag',
+  );
+
+  // Exported permission: 'unflag resume_bookmarks'.
+  $permissions['unflag resume_bookmarks'] = array(
+    'name' => 'unflag resume_bookmarks',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'recruiter' => 'recruiter',
+    ),
+    'module' => 'flag',
+  );
+
+  // Exported permission: 'use flag import'.
+  $permissions['use flag import'] = array(
+    'name' => 'use flag import',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'flag',
   );
 
   // Exported permission: 'view any cv profile'.
