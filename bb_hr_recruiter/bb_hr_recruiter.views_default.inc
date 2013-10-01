@@ -22,7 +22,7 @@ function bb_hr_recruiter_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'CV bookmarks';
+  $handler->display->display_options['title'] = 'Gemarkeerde CVs';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
@@ -76,7 +76,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $translatables['cvs_bookmarks'] = array(
     t('Master'),
-    t('CV bookmarks'),
+    t('Gemarkeerde CVs'),
     t('more'),
     t('Apply'),
     t('Opnieuw instellen'),
@@ -90,7 +90,7 @@ function bb_hr_recruiter_views_default_views() {
     t('‹ vorige'),
     t('volgende ›'),
     t('laatste »'),
-    t('flag'),
+    t('markeren'),
     t('Profiel ID'),
     t('.'),
     t(','),
@@ -110,7 +110,7 @@ function bb_hr_recruiter_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Recruiter Applications';
+  $handler->display->display_options['title'] = 'Recruiter Sollicitaties';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -146,7 +146,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'No applications found.';
+  $handler->display->display_options['empty']['area']['content'] = 'Geen sollicitaties gevonden.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_application_job_ref_target_id']['id'] = 'field_application_job_ref_target_id';
@@ -166,7 +166,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['relationships']['profile']['bundle_types'] = array(
     'cv' => 'cv',
   );
-  /* Relationship: Profiel: Personal Information (field_cv_personal_information) */
+  /* Relationship: Profiel: Persoonlijke Informatie (field_cv_personal_information) */
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['id'] = 'field_cv_personal_information_value';
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['table'] = 'field_data_field_cv_personal_information';
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['field'] = 'field_cv_personal_information_value';
@@ -344,7 +344,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
-  /* Veld: Field collection item: Firstname */
+  /* Veld: Field collection item: Voornaam */
   $handler->display->display_options['fields']['field_cv_pers_firstname']['id'] = 'field_cv_pers_firstname';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['table'] = 'field_data_field_cv_pers_firstname';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['field'] = 'field_cv_pers_firstname';
@@ -352,7 +352,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['fields']['field_cv_pers_firstname']['label'] = '';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cv_pers_firstname']['element_label_colon'] = FALSE;
-  /* Veld: Field collection item: Lastname */
+  /* Veld: Field collection item: Familienaam */
   $handler->display->display_options['fields']['field_cv_pers_lastname']['id'] = 'field_cv_pers_lastname';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['table'] = 'field_data_field_cv_pers_lastname';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['field'] = 'field_cv_pers_lastname';
@@ -415,16 +415,16 @@ function bb_hr_recruiter_views_default_views() {
   $handler = $view->new_display('panel_pane', 'All applications for this job', 'panel_pane_1');
   $translatables['recruiter_applications'] = array(
     t('Master'),
-    t('Recruiter Applications'),
+    t('Recruiter Sollicitaties'),
     t('more'),
     t('Apply'),
     t('Opnieuw instellen'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('No applications found.'),
+    t('Geen sollicitaties gevonden.'),
     t('Job'),
-    t('author'),
+    t('auteur'),
     t('Profiel'),
     t('field collection item from field_cv_personal_information'),
     t('Post date'),
@@ -450,7 +450,7 @@ function bb_hr_recruiter_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Recruiter Applications Shortlist';
+  $handler->display->display_options['title'] = 'Recruiter Sollicitaties Shortlist';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -486,7 +486,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'No applications found.';
+  $handler->display->display_options['empty']['area']['content'] = 'Geen sollicitaties gevonden.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_application_job_ref_target_id']['id'] = 'field_application_job_ref_target_id';
@@ -506,7 +506,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['relationships']['profile']['bundle_types'] = array(
     'cv' => 'cv',
   );
-  /* Relationship: Profiel: Personal Information (field_cv_personal_information) */
+  /* Relationship: Profiel: Persoonlijke Informatie (field_cv_personal_information) */
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['id'] = 'field_cv_personal_information_value';
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['table'] = 'field_data_field_cv_personal_information';
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['field'] = 'field_cv_personal_information_value';
@@ -684,7 +684,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
-  /* Veld: Field collection item: Firstname */
+  /* Veld: Field collection item: Voornaam */
   $handler->display->display_options['fields']['field_cv_pers_firstname']['id'] = 'field_cv_pers_firstname';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['table'] = 'field_data_field_cv_pers_firstname';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['field'] = 'field_cv_pers_firstname';
@@ -692,7 +692,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['fields']['field_cv_pers_firstname']['label'] = '';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cv_pers_firstname']['element_label_colon'] = FALSE;
-  /* Veld: Field collection item: Lastname */
+  /* Veld: Field collection item: Familienaam */
   $handler->display->display_options['fields']['field_cv_pers_lastname']['id'] = 'field_cv_pers_lastname';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['table'] = 'field_data_field_cv_pers_lastname';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['field'] = 'field_cv_pers_lastname';
@@ -762,16 +762,16 @@ function bb_hr_recruiter_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Shortlist applications for this job', 'panel_pane_1');
   $translatables['recruiter_applications_shortlist'] = array(
     t('Master'),
-    t('Recruiter Applications Shortlist'),
+    t('Recruiter Sollicitaties Shortlist'),
     t('more'),
     t('Apply'),
     t('Opnieuw instellen'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('No applications found.'),
+    t('Geen sollicitaties gevonden.'),
     t('Job'),
-    t('author'),
+    t('auteur'),
     t('Profiel'),
     t('field collection item from field_cv_personal_information'),
     t('Post date'),
@@ -797,7 +797,7 @@ function bb_hr_recruiter_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'All Recruiter Jobs';
+  $handler->display->display_options['title'] = 'Alle Recruiter Jobs';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
@@ -993,8 +993,8 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'Applications';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'All Applications';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Sollicitaties';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Alle Sollicitaties';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = 'node/[nid]/applications';
   /* Veld: Global: Custom text */
@@ -1002,7 +1002,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = 'Shortlist';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'Shortlist Applications';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'Shortlist Sollicitaties';
   $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'node/[nid]/applications/shortlist';
   /* Sort criterion: Inhoud: Post date */
@@ -1049,7 +1049,7 @@ function bb_hr_recruiter_views_default_views() {
   /* Display: My jobs */
   $handler = $view->new_display('page', 'My jobs', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'My Managed Jobs';
+  $handler->display->display_options['title'] = 'Mijn beheerde Jobs';
   $handler->display->display_options['path'] = 'admin/recruiter/my-jobs';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'My Jobs';
@@ -1059,7 +1059,7 @@ function bb_hr_recruiter_views_default_views() {
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $translatables['recruiter_jobs'] = array(
     t('Master'),
-    t('All Recruiter Jobs'),
+    t('Alle Recruiter Jobs'),
     t('more'),
     t('Apply'),
     t('Opnieuw instellen'),
@@ -1073,18 +1073,18 @@ function bb_hr_recruiter_views_default_views() {
     t('‹ vorige'),
     t('volgende ›'),
     t('laatste »'),
-    t('author'),
+    t('auteur'),
     t('Titel'),
     t('Updated date'),
     t('Naam'),
-    t('Applications'),
-    t('All Applications'),
+    t('Sollicitaties'),
+    t('Alle Sollicitaties'),
     t('Shortlist'),
-    t('Shortlist Applications'),
+    t('Shortlist Sollicitaties'),
     t('Alle'),
     t('All jobs'),
     t('My jobs'),
-    t('My Managed Jobs'),
+    t('Mijn beheerde Jobs'),
   );
   $export['recruiter_jobs'] = $view;
 

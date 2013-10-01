@@ -156,8 +156,6 @@ function bb_hr_applicant_cv_required_fields() {
   $defaults = array(
     'field_cv_personal_information',
     'field_cv_job_preferences',
-    'field_cv_education',
-    'field_cv_work_experience',
   );
   return variable_get('bb_hr_applicant_cv_required_fields', $defaults);
 }

@@ -60,7 +60,7 @@ function bb_hr_application_default_message_type() {
 function bb_hr_application_node_info() {
   $items = array(
     'application' => array(
-      'name' => t('Application'),
+      'name' => t('Sollicitatie'),
       'base' => 'node_content',
       'description' => t('Een sollicitatie.'),
       'has_title' => '1',

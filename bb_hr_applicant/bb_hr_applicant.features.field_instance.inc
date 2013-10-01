@@ -26,7 +26,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_attachment_file',
-    'label' => 'Attachments',
+    'label' => 'Bijlagen',
     'required' => 0,
     'settings' => array(
       'description_field' => 1,
@@ -63,7 +63,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_edu_degree_level',
-    'label' => 'Degree Level',
+    'label' => 'Opleidingsniveau',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -71,13 +71,7 @@ function bb_hr_applicant_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
-        'delimiter' => '',
-        'limit' => 10,
-        'min_length' => 0,
-        'size' => 60,
-      ),
+      'settings' => array(),
       'type' => 'options_select',
       'weight' => 2,
     ),
@@ -100,7 +94,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_edu_field_of_study',
-    'label' => 'Field of Study',
+    'label' => 'Studiedomein',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -137,7 +131,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_edu_institute',
-    'label' => 'Institution Name',
+    'label' => 'Instituut Naam',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -176,7 +170,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_edu_time_period',
-    'label' => 'Time Period',
+    'label' => 'Periode',
     'required' => 0,
     'settings' => array(
       'default_value' => 'blank',
@@ -218,7 +212,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_summary',
-    'label' => 'Summary',
+    'label' => 'Opmerkingen',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -252,7 +246,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_gen_skills_skills_level',
-    'label' => 'General Skills',
+    'label' => 'Algemene Vaardigheden',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -287,7 +281,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_summary',
-    'label' => 'Additional Notes',
+    'label' => 'Opmerkingen',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -321,7 +315,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_it_skills_skills_level',
-    'label' => 'IT Skills',
+    'label' => 'IT Vaardigheden',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -395,7 +389,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pref_available',
-    'label' => 'Available to start',
+    'label' => 'Beschikbaar vanaf',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -437,7 +431,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pref_career_status',
-    'label' => 'Career Status',
+    'label' => 'Carrière Status',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -468,8 +462,8 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pref_desired_job_title',
-    'label' => 'Desired Job Title',
-    'required' => 0,
+    'label' => 'Gewenste Functietitel',
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -507,7 +501,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pref_desired_salary',
-    'label' => 'Desired Salary',
+    'label' => 'Gewenst Salaris',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -542,7 +536,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pref_employment_type',
-    'label' => 'Employment Type',
+    'label' => 'Contract Type',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -573,7 +567,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pref_field_of_work',
-    'label' => 'Desired Field of work',
+    'label' => 'Gewenst werkveld',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -604,7 +598,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_summary',
-    'label' => 'Extra notes',
+    'label' => 'Opmerkingen',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -638,7 +632,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_languages_language',
-    'label' => 'Languages',
+    'label' => 'Talen',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -673,7 +667,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_summary',
-    'label' => 'Additional Notes',
+    'label' => 'Opmerkingen',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -712,7 +706,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pers_birthday',
-    'label' => 'Birthday',
+    'label' => 'Geboortedatum',
     'required' => 0,
     'settings' => array(
       'default_value' => 'blank',
@@ -754,8 +748,8 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pers_firstname',
-    'label' => 'Firstname',
-    'required' => 0,
+    'label' => 'Voornaam',
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -788,8 +782,8 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pers_lastname',
-    'label' => 'Lastname',
-    'required' => 0,
+    'label' => 'Familienaam',
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -822,7 +816,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pers_phone',
-    'label' => 'Phone',
+    'label' => 'Telefoon',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -858,7 +852,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pers_photo',
-    'label' => 'Photo',
+    'label' => 'Foto',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -914,7 +908,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pers_postal_address',
-    'label' => 'Postal Address',
+    'label' => 'Adres',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -954,7 +948,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_pers_salutation',
-    'label' => 'Salutation',
+    'label' => 'Aanspreking',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -985,7 +979,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_summary',
-    'label' => 'About Me',
+    'label' => 'Over Mezelf',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -1019,7 +1013,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_summary',
-    'label' => 'Additional Notes',
+    'label' => 'Opmerkingen',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -1053,7 +1047,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_workxp_company_link',
-    'label' => 'Company Link',
+    'label' => 'Bedrijfswebsite',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -1101,7 +1095,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_workxp_company_location',
-    'label' => 'Company Location',
+    'label' => 'Bedrijfslocatie',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -1135,7 +1129,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_workxp_company_name',
-    'label' => 'Company Name',
+    'label' => 'Bedrijfsnaam',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -1169,7 +1163,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_workxp_employment_type',
-    'label' => 'Employment Type',
+    'label' => 'Contract Type',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1200,7 +1194,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_workxp_field_of_work',
-    'label' => 'Field of work',
+    'label' => 'Werkveld',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1237,7 +1231,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_workxp_job_title',
-    'label' => 'Job Title',
+    'label' => 'Functietitel',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -1276,7 +1270,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_cv_workxp_time_period',
-    'label' => 'Time Period',
+    'label' => 'Periode',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -1324,7 +1318,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_attachments',
-    'label' => 'Attachments',
+    'label' => 'Bijlagen',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1361,7 +1355,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_education',
-    'label' => 'Education',
+    'label' => 'Opleiding',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1398,7 +1392,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_general_skills',
-    'label' => 'General Skills',
+    'label' => 'Algemene Vaardigheden',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1435,7 +1429,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_it_skills',
-    'label' => 'IT Skills',
+    'label' => 'IT Vaardigheden',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1472,7 +1466,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_job_preferences',
-    'label' => 'Job Preferences',
+    'label' => 'Job Voorkeuren',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1509,7 +1503,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_languages',
-    'label' => 'Languages',
+    'label' => 'Talen',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1546,7 +1540,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_personal_information',
-    'label' => 'Personal Information',
+    'label' => 'Persoonlijke Informatie',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1581,7 +1575,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_state',
-    'label' => 'CV State',
+    'label' => 'CV status',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1618,7 +1612,7 @@ function bb_hr_applicant_field_default_field_instances() {
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_cv_work_experience',
-    'label' => 'Work Experience',
+    'label' => 'Werkervaring',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1634,41 +1628,40 @@ function bb_hr_applicant_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('About Me');
+  t('Aanspreking');
   t('Additional Notes');
-  t('Attachments');
-  t('Available to start');
-  t('Birthday');
-  t('CV State');
-  t('Career Status');
-  t('Company Link');
-  t('Company Location');
-  t('Company Name');
-  t('Degree Level');
-  t('Desired Field of work');
-  t('Desired Job Title');
-  t('Desired Salary');
-  t('Education');
-  t('Employment Type');
-  t('Extra notes');
-  t('Field of Study');
-  t('Field of work');
-  t('Firstname');
-  t('General Skills');
-  t('IT Skills');
-  t('Institution Name');
-  t('Job Preferences');
-  t('Job Title');
-  t('Languages');
-  t('Lastname');
-  t('Personal Information');
-  t('Phone');
-  t('Photo');
-  t('Postal Address');
-  t('Salutation');
-  t('Summary');
-  t('Time Period');
-  t('Work Experience');
+  t('Adres');
+  t('Algemene Vaardigheden');
+  t('Bedrijfslocatie');
+  t('Bedrijfsnaam');
+  t('Bedrijfswebsite');
+  t('Beschikbaar vanaf');
+  t('Bijlagen');
+  t('CV status');
+  t('Carrière Status');
+  t('Contract Type');
+  t('Familienaam');
+  t('Foto');
+  t('Functietitel');
+  t('Geboortedatum');
+  t('Gewenst Salaris');
+  t('Gewenst werkveld');
+  t('Gewenste Functietitel');
+  t('IT Vaardigheden');
+  t('Instituut Naam');
+  t('Job Voorkeuren');
+  t('Opleiding');
+  t('Opleidingsniveau');
+  t('Opmerkingen');
+  t('Over Mezelf');
+  t('Periode');
+  t('Persoonlijke Informatie');
+  t('Studiedomein');
+  t('Talen');
+  t('Telefoon');
+  t('Voornaam');
+  t('Werkervaring');
+  t('Werkveld');
 
   return $field_instances;
 }
