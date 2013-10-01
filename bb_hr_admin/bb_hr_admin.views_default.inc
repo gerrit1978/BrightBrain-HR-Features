@@ -26,7 +26,7 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    3 => '3',
+    30037204 => '30037204',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -57,7 +57,7 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['relationships']['profile']['bundle_types'] = array(
     'cv' => 'cv',
   );
-  /* Relationship: Profiel: Personal Information (field_cv_personal_information) */
+  /* Relationship: Profiel: Persoonlijke Informatie (field_cv_personal_information) */
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['id'] = 'field_cv_personal_information_value';
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['table'] = 'field_data_field_cv_personal_information';
   $handler->display->display_options['relationships']['field_cv_personal_information_value']['field'] = 'field_cv_personal_information_value';
@@ -88,19 +88,19 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
   $handler->display->display_options['fields']['title_1']['relationship'] = 'field_application_job_ref_target_id';
-  $handler->display->display_options['fields']['title_1']['label'] = 'Job Title';
-  /* Veld: Field collection item: Firstname */
+  $handler->display->display_options['fields']['title_1']['label'] = 'Functietitel';
+  /* Veld: Field collection item: Voornaam */
   $handler->display->display_options['fields']['field_cv_pers_firstname']['id'] = 'field_cv_pers_firstname';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['table'] = 'field_data_field_cv_pers_firstname';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['field'] = 'field_cv_pers_firstname';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['relationship'] = 'field_cv_personal_information_value';
   $handler->display->display_options['fields']['field_cv_pers_firstname']['exclude'] = TRUE;
-  /* Veld: Field collection item: Lastname */
+  /* Veld: Field collection item: Familienaam */
   $handler->display->display_options['fields']['field_cv_pers_lastname']['id'] = 'field_cv_pers_lastname';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['table'] = 'field_data_field_cv_pers_lastname';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['field'] = 'field_cv_pers_lastname';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['relationship'] = 'field_cv_personal_information_value';
-  $handler->display->display_options['fields']['field_cv_pers_lastname']['label'] = 'Applicant';
+  $handler->display->display_options['fields']['field_cv_pers_lastname']['label'] = 'Sollicitant';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_cv_pers_lastname']['alter']['text'] = '[field_cv_pers_firstname] [field_cv_pers_lastname]';
   $handler->display->display_options['fields']['field_cv_pers_lastname']['alter']['make_link'] = TRUE;
@@ -151,14 +151,14 @@ function bb_hr_admin_views_default_views() {
     t('volgende ›'),
     t('laatste »'),
     t('Job'),
-    t('author'),
+    t('auteur'),
     t('Profiel'),
     t('field collection item from field_cv_personal_information'),
     t('Post date'),
     t('Titel'),
-    t('Job Title'),
-    t('Firstname'),
-    t('Applicant'),
+    t('Functietitel'),
+    t('Voornaam'),
+    t('Sollicitant'),
     t('[field_cv_pers_firstname] [field_cv_pers_lastname]'),
     t('Page'),
   );
@@ -176,11 +176,11 @@ function bb_hr_admin_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Jobs administration';
+  $handler->display->display_options['title'] = 'Jobs administratie';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    3 => '3',
+    30037204 => '30037204',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -427,8 +427,8 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'Applications';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Applications';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Sollicitaties';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Sollicitaties';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = 'node/[nid]/applications';
   /* Sort criterion: Inhoud: Post date */
@@ -459,7 +459,7 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'management';
   $translatables['admin_jobs'] = array(
     t('Master'),
-    t('Jobs administration'),
+    t('Jobs administratie'),
     t('more'),
     t('Apply'),
     t('Opnieuw instellen'),
@@ -473,14 +473,14 @@ function bb_hr_admin_views_default_views() {
     t('‹ vorige'),
     t('volgende ›'),
     t('laatste »'),
-    t('author'),
+    t('auteur'),
     t('Inhoud'),
     t('Type'),
     t('Titel'),
     t('Updated date'),
     t('Status'),
     t('Naam'),
-    t('Applications'),
+    t('Sollicitaties'),
     t('Page'),
   );
   $export['admin_jobs'] = $view;
@@ -497,11 +497,11 @@ function bb_hr_admin_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'CV administration';
+  $handler->display->display_options['title'] = 'CV administratie';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    3 => '3',
+    30037204 => '30037204',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -634,7 +634,7 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $translatables['resume_administration'] = array(
     t('Defaults'),
-    t('CV administration'),
+    t('CV administratie'),
     t('more'),
     t('Apply'),
     t('Opnieuw instellen'),
@@ -758,14 +758,14 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<a href="/admin/people/create">Add user</a>';
+  $handler->display->display_options['header']['area']['content'] = '<a href="/admin/people/create">Gebruiker toevoegen</a>';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'No users found.';
+  $handler->display->display_options['empty']['area']['content'] = 'Geen gebruikers gevonden.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Veld: Gebruiker: Naam */
   $handler->display->display_options['fields']['name']['id'] = 'name';
@@ -825,7 +825,7 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['filters']['name']['group'] = 1;
   $handler->display->display_options['filters']['name']['exposed'] = TRUE;
   $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
-  $handler->display->display_options['filters']['name']['expose']['label'] = 'Name (text)';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'Naam (tekst)';
   $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
   $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
   /* Filter criterion: Gebruiker: Naam */
@@ -836,7 +836,7 @@ function bb_hr_admin_views_default_views() {
   $handler->display->display_options['filters']['uid_1']['group'] = 1;
   $handler->display->display_options['filters']['uid_1']['exposed'] = TRUE;
   $handler->display->display_options['filters']['uid_1']['expose']['operator_id'] = 'uid_1_op';
-  $handler->display->display_options['filters']['uid_1']['expose']['label'] = 'Name (autcomplete)';
+  $handler->display->display_options['filters']['uid_1']['expose']['label'] = 'Naam (autocomplete)';
   $handler->display->display_options['filters']['uid_1']['expose']['operator'] = 'uid_1_op';
   $handler->display->display_options['filters']['uid_1']['expose']['identifier'] = 'uid_1';
   /* Filter criterion: Gebruiker: E-mailadres */
@@ -899,8 +899,8 @@ function bb_hr_admin_views_default_views() {
     t('volgende ›'),
     t('laatste »'),
     t('Displaying @start - @end of @total users.'),
-    t('<a href="/admin/people/create">Add user</a>'),
-    t('No users found.'),
+    t('<a href="/admin/people/create">Gebruiker toevoegen</a>'),
+    t('Geen gebruikers gevonden.'),
     t('Gebruikersnaam'),
     t('E-mailadres'),
     t('Rollen'),
@@ -908,8 +908,8 @@ function bb_hr_admin_views_default_views() {
     t('Geregistreerd sinds'),
     t('Laatste toegang'),
     t('Laatste login'),
-    t('Name (text)'),
-    t('Name (autcomplete)'),
+    t('Naam (tekst)'),
+    t('Naam (autocomplete)'),
     t('Rol'),
     t('Page'),
   );
